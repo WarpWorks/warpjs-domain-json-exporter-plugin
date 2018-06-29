@@ -15,7 +15,8 @@ class DomainJsonExporterPlugin extends ActionPlugin {
     }
 
     get jsScriptUrl() {
-        return `${RoutesInfo.expand(constants.routes.assets, {})}/${constants.assets.js}`;
+        // This plugin doesn't need any UI.
+        return null;
     }
 
     getRootUrl(domain, type, id) {

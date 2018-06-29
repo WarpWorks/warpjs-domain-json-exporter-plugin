@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-domain-json-exporter-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Warpjs domain JSON exporter",
   "main": "index.js",
   "scripts": {
