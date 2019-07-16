@@ -1,5 +1,9 @@
 # WarpJS Domain JSON Exporter Plugin Release Notes
 
+## 1.2.3 - 2019-07-16
+
+- lodash CVE-2019-10744
+
 ## 1.2.2 - 2018-08-01
 
 - Fixed typo in constants file.

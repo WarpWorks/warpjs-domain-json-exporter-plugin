@@ -1,13 +1,15 @@
 {
   "name": "@warp-works/warpjs-domain-json-exporter-plugin",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Warpjs domain JSON exporter",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.12.0"
+  },
   "scripts": {
-    "prepublish": "npm run -s lint",
-    "lint": "npm run -s lint:node && npm run -s lint:test",
-    "lint:node": "eslint --fix --config=.eslintrc.node.json --ignore-pattern \"*.test.js\" *.js lib server",
-    "lint:test": "eslint --fix --config=.eslintrc.test.json \"lib/**/*.test.js\" \"server/**/*.test.js\" \"*.test.js\"",
+    "prepack": "npm run -s lint",
+    "lint": "npm run -s lint:node",
+    "lint:node": "eslint --fix --config=.eslintrc.node.json --ignore-pattern '*.test.js' *.js lib server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,21 +33,22 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-domain-json-exporter-plugin#readme",
   "dependencies": {
-    "@warp-works/warpjs-action-plugin": "1.2",
-    "bluebird": "3.5",
-    "lodash": "4"
+    "@warp-works/warpjs-action-plugin": "~1.2.1",
+    "bluebird": "~3.5.5",
+    "lodash": "~4.17.14"
   },
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "^0.3.0",
-    "@quoin/expressjs-routes-info": "0.2",
-    "eslint": "4",
-    "eslint-plugin-html": "4.0",
-    "eslint-plugin-import": "2.13",
-    "eslint-plugin-json": "1.2",
-    "eslint-plugin-node": "6.0",
-    "eslint-plugin-promise": "3.8",
-    "eslint-plugin-standard": "3.1",
-    "express": "4"
+    "@quoin/eslint-config-quoin": "~0.3.2",
+    "@quoin/expressjs-routes-info": "~0.2.2",
+    "eslint": "~6.0.1",
+    "eslint-config-standard": "~13.0.1",
+    "eslint-plugin-html": "~6.0.0",
+    "eslint-plugin-import": "~2.18.0",
+    "eslint-plugin-json": "~1.4.0",
+    "eslint-plugin-node": "~9.1.0",
+    "eslint-plugin-promise": "~4.2.1",
+    "eslint-plugin-standard": "~4.0.0",
+    "express": "~4.17.1"
   },
   "peerDependencies": {
     "@quoin/expressjs-routes-info": ">=0.2",
