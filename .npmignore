@@ -1,3 +1,6 @@
+/**/*.test.js
 /.eslintrc*
+/.github
 /.npmignore
+/reports
 /warp-works-*.tgz
